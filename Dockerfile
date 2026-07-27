@@ -3,6 +3,7 @@ LABEL maintainer="david.williamson@varilink.co.uk"
 ARG UID=1000
 
 RUN                                                                            \
+  export DEBIAN_FRONTEND=noninteractive                                     && \
   apt-get update                                                            && \
   apt-get install --yes --no-install-recommends                                \
     gimp                                                                    && \
