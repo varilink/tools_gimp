@@ -6,6 +6,8 @@ David Williamson @ Varilink Computing Ltd
 
 Tool for using GIMP batch mode to generate images that are transformed from source image files in website projects. Projects that use this tool can define and track the source image files and the GIMP Script-Fu script file or files that are run in order to generate their distribution images. They do not then need to track those distribution images.
 
+Note that this tool installs GIMP from the APT repository for the Debian bookworm release, which is "old stable" at time of writing. This installs GIMP version 2.10.34. I am currently holding off upgrading this tool to use the Debian trixie release, as its APT repository installs GIMP version 3.0.4. The GIMP batch scripting interface changes considerably from GIMP version 2 to GIMP version 3 and all of my project GIMP scripts are based on the version 2 interface.
+
 ## Using this tool
 
 ### Install
