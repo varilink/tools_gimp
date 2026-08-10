@@ -10,7 +10,7 @@ RUN                                                                            \
     useradd --create-home --uid ${UID} gimp
 
 USER ${UID}
-WORKDIR /gimp
+WORKDIR /workdir
 
 COPY docker-entrypoint.sh /
 ENTRYPOINT [ "bash", "/docker-entrypoint.sh" ]
